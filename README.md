@@ -1,12 +1,24 @@
-# React + Vite
+# Responsive React Todo App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Responsive react to do app with local storage enabled.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- using this app we can add todo's with auto start date
+- app let's us to choose end date of the todo
+- we can delete any todo anytime by using delete button
+- when we hover on a todo delete button apears
+- all todo's are stored in local storage of our browser, so that we can access anytime
+- when todo gets deleted it will be removed from localstorage too
 
-## Expanding the ESLint configuration
+## Code
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- this code is react dev project
+
+## build
+
+- npm run build
+
+## installation
+
+- open index.html in your favorite browser
