@@ -47,19 +47,24 @@ function App() {
         <div className="card">
           <div className="head">
             <h1>To Do App</h1>
-          </div>
-          <div className="body">
             <div className="inputLine">
-              <input ref={todoRef} type="text" />
+              <input ref={todoRef} type="text" placeholder="Type To Do ..." />
               <input ref={dateRef} type="date" />
               <button onClick={toDoHandler}>Add To Do</button>
             </div>
+          </div>
+          <div className="body">
+            {/* <div className="inputLine">
+              <input ref={todoRef} type="text" placeholder="Type To Do ..." />
+              <input ref={dateRef} type="date" />
+              <button onClick={toDoHandler}>Add To Do</button>
+            </div> */}
             <div className="todoShowLine">
               <ul>
                 <li className="todoHead">
-                  <div>to do</div>
-                  <div>start date</div>
-                  <div>end date</div>
+                  <div>To Do</div>
+                  <div>Start Date</div>
+                  <div>End Date</div>
                 </li>
                 {todos.map((item, index) => {
                   return (
@@ -71,11 +76,13 @@ function App() {
                       <div>{item.todo}</div>
                       <div>
                         {item.createdDateTime} <br />
-                        <span className="dates">create date</span>
+                        <span className="dates">create Date</span>
                       </div>
                       <div>
                         {item.expiryDateTime} <br />
-                        <span className="dates">expiry date</span>
+                        <span className="dates">
+                          {item.expiryDateTime ? "expiry date" : ""}
+                        </span>
                       </div>
                       <div
                         className="deleteButton"

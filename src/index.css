@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 ul li, ol li {
   list-style: none;
 }
@@ -151,8 +155,8 @@ display: none;
 @media screen and (max-width:767px) {
 
   .card {
-    height: 100%;
-    padding-top: 100px;
+    height: 80%;
+    padding-top: 25px;
   }
 
   button {
